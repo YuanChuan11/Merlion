@@ -72,7 +72,7 @@ setup(
         "pandas>=1.1.0",  # >=1.1.0 for origin kwarg to df.resample()
         "prophet>=1.1",  # 1.1 removes dependency on pystan
         "scikit-learn>=0.22",  # >=0.22 for changes to isolation forest algorithm
-        "scipy>=1.6.0",  # 1.6.0 adds multivariate_t density to scipy.stats
+        "scipy>=1.6.0,<1.16.0",  # 1.6.0 adds multivariate_t density to scipy.stats
         "statsmodels>=0.12.2",
         "lightgbm",  # if running at MacOS, need OpenMP: "brew install libomp"
         "tqdm",
